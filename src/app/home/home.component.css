@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About Project Section */
+.about-project {
+  text-align: center; /* Center-align the project section text */
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 6.5em;
+  color: #2ab8cb;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sub-title {
+  font-size: 3em;
+  color: #2ab8cb;
+}
+
+/* Project Features List */
+.project-features {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Add vertical margin */
+  display: inline-block; /* Centering container */
+}
+
+.project-features li {
+  font-size: 1em;
+  padding: 8px 0; /* Space between each item */
+  color: #333; /* Text color */
+  list-style-type: disc; /* Use disc bullet points */
+  text-align: left; 
+}
+
+/* Font Awesome Icon Styling */
+.project-features li i {
+  color: #2ab8cb;
+  margin-right: 8px; 
+  font-size: 1.2em;
+}
+
+/* Sensor Cards */
+.sensor-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.card {
+  background: linear-gradient(145deg, #00bcd4, #004d61);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #f4faff; /* Light text for contrast */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pond Cards */
+.pond-cards {
+  text-align: center;
+  margin-top: 40px; /* Space above the pond cards */
+}
+
+.pond-cards h2 {
+  margin-bottom: 20px; /* Space below the pond title */
+}
+
+.pond-cards .card {
+  background: linear-gradient(145deg, #4caf50, #0d4e14); /* Different gradient for pond cards */
+  color: #f4faff; /* Light text for contrast */
+}
+
+/* Icon and Text Styling */
+.icon {
+  font-size: 2.5em;
+  color: #ffcc00; /* Bright accent color */
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.4em;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #f4faff;
+  
+}
+
+.card strong {
+  color: #ffd700;
+}

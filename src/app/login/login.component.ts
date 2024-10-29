@@ -2,19 +2,12 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class AppComponent {
+export class LoginComponent {
   constructor(private router: Router) {}
-
-  openLoginModal() {
-    const modal = document.getElementById('loginModal');
-    if (modal) {
-      modal.style.display = 'flex'; // Show modal
-    }
-  }
 
   navigateToUser() {
     this.router.navigate(['/user']); // Navigate to User Login component
@@ -34,6 +27,7 @@ export class AppComponent {
   }
 
   register() {
+    // Navigate to the registration page. You can change the path as needed.
     this.router.navigate(['/register']); // Navigate to Register component
     this.closeModal(); // Close modal after navigation
   }

@@ -1,0 +1,76 @@
+/* Navbar Container */
+.navbar {
+  background-color: #599ec0;
+  padding: 1.5rem; /* Increased padding for a larger navbar */
+  height: 80px; /* Set a fixed height for the navbar */
+  margin-bottom: 80px;
+}
+
+/* Container for Flexbox Alignment */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between brand and nav links */
+  align-items: center; /* Vertically center items */
+  flex: 1; /* Allow the container to take the full width */
+}
+
+/* Brand */
+.navbar-brand {
+  color: white;
+  font-size: 2rem; /* Increased font size for the brand */
+  text-decoration: none;
+  margin-right: auto; /* Allow margin to the right for centering */
+}
+
+/* Navbar Links */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Remove default margin */
+}
+
+.nav-item {
+  margin: 0 20px; /* Increased margin for more spacing */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem; /* Increased padding for links */
+  font-size: 1.2rem; /* Increased font size for links */
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Active Link */
+.active {
+  border-bottom: 2px solid white;
+}
+
+/* Navbar Toggler for Mobile */
+.navbar-toggler {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased font size for toggler */
+}
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: flex !important; /* Show in larger screens */
+  }
+}
