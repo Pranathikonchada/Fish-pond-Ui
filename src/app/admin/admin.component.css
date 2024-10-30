@@ -1,46 +1,65 @@
 .admin-login {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .admin-login h2 {
-    color: #599ec0;
-  }
-  
-  .admin-login form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .admin-login label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .admin-login input {
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
-  
-  .admin-login button {
-    background-color: #599ec0;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .admin-login button:hover {
-    background-color: #218838;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px; /* Increased padding for more space */
+  background-color: var(--light-green); /* Updated background color to match the palette */
+  border-radius: 10px; /* Slightly increased border-radius for softer corners */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+.admin-login:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.admin-login h2 {
+  color: var(--medium-blue); /* Updated color to match the palette */
+  margin-bottom: 20px; /* Added margin below heading */
+  font-size: 1.8rem; /* Increased font size for prominence */
+  font-weight: 600; /* Increased font weight for emphasis */
+}
+
+.admin-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Styles for labels */
+.admin-login label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--dark-blue); /* Updated label color for consistency */
+}
+
+/* Input fields styling */
+.admin-login input {
+  padding: 10px; /* Increased padding for comfort */
+  margin-top: 5px;
+  border-radius: 5px; /* Rounded corners for inputs */
+  border: 1px solid var(--medium-blue); /* Updated border color */
+  transition: border-color 0.3s ease; /* Transition for border color change */
+}
+
+.admin-login input:focus {
+  border-color: var(--dark-blue); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.admin-login button {
+  background-color: var(--medium-blue); /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for buttons */
+  margin-top: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for background and transform */
+}
+
+.admin-login button:hover {
+  background-color: var(--dark-blue); /* Darker background on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}

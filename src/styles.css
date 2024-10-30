@@ -1,6 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-/* Global styles may inadvertently hide elements */
-.footer {
-    display: block; /* Ensure it's set to block if visibility issues occur */
-  }
-  
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --light-green: #DFF2EB;
+  --light-blue: #B9E5E8;
+  --medium-blue: #7AB2D3;
+  --dark-blue: #4A628A;
+}

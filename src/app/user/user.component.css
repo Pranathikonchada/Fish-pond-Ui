@@ -1,46 +1,55 @@
 .user-login {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .user-login h2 {
-    color: #599ec0;
-  }
-  
-  .user-login form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .user-login label {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .user-login input {
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
-  
-  .user-login button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .user-login button:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px; /* Increased padding for more space */
+  background-color: var(--light-green);
+  border-radius: 10px; /* Slightly increased border-radius for softer corners */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+}
+
+.user-login:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.user-login h2 {
+  color: var(--medium-blue);
+  margin-bottom: 20px; /* Added margin below heading */
+  font-size: 1.8rem; /* Increased font size for prominence */
+  font-weight: 600; /* Increased font weight for emphasis */
+}
+
+/* Optional: Add styles for input fields */
+.user-login input {
+  width: 100%; /* Full width for inputs */
+  padding: 10px;
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid var(--medium-blue); /* Border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s ease; /* Transition for border color change */
+}
+
+.user-login input:focus {
+  border-color: var(--dark-blue); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Optional: Style for buttons */
+.user-login button {
+  background-color: var(--medium-blue); /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem; /* Consistent font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for background and transform */
+}
+
+.user-login button:hover {
+  background-color: var(--dark-blue); /* Darker background on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}

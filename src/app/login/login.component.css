@@ -15,7 +15,7 @@
 
 /* Styles for the login container */
 .login-container {
-  background: linear-gradient(135deg, #4bacc1, #2193b0); /* Gradient background */
+  background: linear-gradient(135deg, var(--medium-blue), var(--dark-blue)); /* Gradient background with color variables */
   padding: 40px; /* Increased padding for more space */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
@@ -36,6 +36,11 @@
   top: 15px;
   right: 15px;
   color: #fff; /* White color for close button */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.close-btn:hover {
+  color: var(--light-blue); /* Change color on hover */
 }
 
 /* Title styles */
@@ -51,8 +56,8 @@ h3 {
 
 /* Button styles */
 .login-btn {
-  background-color: #fff; /* White button color */
-  color: #2193b0; /* Button text color */
+  background-color: var(--light-blue); /* Use color variable for button background */
+  color: #fff; /* White button text */
   border: none;
   border-radius: 5px; /* Rounded button edges */
   padding: 12px 15px; /* Button padding */
@@ -64,8 +69,8 @@ h3 {
 }
 
 .login-btn:hover {
-  background-color: #f1f1f1; /* Light gray on hover */
-  color: #58b5bc; /* Darker text color on hover */
+  background-color: var(--dark-blue); /* Darker blue on hover */
+  color: #f1f1f1; /* Light text color on hover */
 }
 
 /* Register link styles */
@@ -75,7 +80,7 @@ h3 {
 }
 
 a {
-  color: #ffdd57; /* Yellow color for link */
+  color: var(--light-blue); /* Use light blue for links */
   text-decoration: underline; /* Underline links */
 }
 

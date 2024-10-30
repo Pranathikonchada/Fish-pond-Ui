@@ -33,17 +33,71 @@
   margin: 0 20px; /* Increased margin for more spacing */
 }
 
+/* Modernized Nav-Link with Hover Effect */
 .nav-link {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1.5rem; /* Increased padding for links */
   font-size: 1.2rem; /* Increased font size for links */
-  transition: background-color 0.3s;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
+/* Hover effect with color fade and underline animation */
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+  color: #f0f0f0;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.login {
+  color: white;
+  background-color: transparent; /* Make background transparent, can change as needed */
+  padding: 0.5rem 1.5rem; /* Same padding as nav links */
+  font-size: 1.2rem; /* Same font size as nav links */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Allow for pseudo-elements */
+  transition: color 0.3s ease; /* Transition for color changes */
+}
+
+/* Hover effect for login button */
+.login:hover {
+  color: #f0f0f0; /* Change color on hover */
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.login:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* Active Link */
